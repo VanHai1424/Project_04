@@ -5,7 +5,12 @@
     gap: 14px;
 
     @include abtracts.breakPoint(lg) {
-        margin-left: 39px;
+        margin-left: 40px;
+        gap: 10px;
+    }
+
+    @include abtracts.breakPoint(sm) {
+        margin-left: 0;
         gap: 10px;
     }
 
