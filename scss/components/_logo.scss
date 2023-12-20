@@ -9,7 +9,7 @@
         gap: 10px;
     }
 
-    @include abtracts.breakPoint(sm) {
+    @include abtracts.breakPoint(md) {
         margin-left: 0;
         gap: 10px;
     }

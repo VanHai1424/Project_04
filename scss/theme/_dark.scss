@@ -1,4 +1,6 @@
+@use "../abtracts";
 html.dark {
+    // header
     --text-color: #FFFFFF;
     --icon-color: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(36%) hue-rotate(0deg) brightness(111%) contrast(100%);
     --header-bg-color: #171C28;
@@ -6,4 +8,19 @@ html.dark {
     --top-act-group-bg-color: #292E39;
     --top-act-group-shadow: rgba(0, 0, 0, 0.20);
     --top-act-group-separate: #EDEDF6;
+
+    @include abtracts.breakPoint(sm) {
+        --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.20);
+    }
+
+    // dropdown
+    --dropdown-bg-color: #2f3441;
+    --dropdown-shadow: rgba(23, 28, 40, 0.40);
+    --dropdown-arrow-color: brightness(0) saturate(100%) invert(16%) sepia(12%) saturate(1198%) hue-rotate(185deg) brightness(93%) contrast(85%);
+    --menu-top-border-color: #171C28;
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(92%) sepia(13%) saturate(664%) hue-rotate(247deg) brightness(113%) contrast(96%);
+
+    // sidebar
+    --sidebar-bg-color: #292E39;
+    --sidebar-shadow: rgba(23, 28, 40, 0.40);    
 }
