@@ -5,7 +5,7 @@ html {
     --text-color: #1A162E;
     --icon-color: brightness(0) saturate(100%) invert(5%) sepia(19%) saturate(5537%) hue-rotate(232deg) brightness(96%) contrast(92%);
     --header-bg-color: #EEEEEE;
-    @include abtracts.breakPoint(sm) {
+    @include abtracts.screen(sm) {
         --header-bg-color: #FFF;
         --header-shadow-color: rgba(237, 237, 246, 0.20);
     }
