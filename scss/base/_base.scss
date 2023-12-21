@@ -1,3 +1,5 @@
+@use "../abtracts";
+
 *, ::before, ::after {
     box-sizing: border-box;
 }
@@ -22,6 +24,8 @@ button {
     border: none;
     outline: none;
     background-color: transparent;
+    padding: 0;
+    cursor: pointer;
 }
 
 a, img, button, input, textarea, select {
@@ -32,4 +36,11 @@ a, img, button, input, textarea, select {
 
 .icon {
     filter: var(--icon-color);
+}
+
+.container {
+    @include abtracts.screen(sm) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
 }

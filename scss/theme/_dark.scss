@@ -21,6 +21,21 @@ html.dark {
     --menu-column-icon-color: brightness(0) saturate(100%) invert(92%) sepia(13%) saturate(664%) hue-rotate(247deg) brightness(113%) contrast(96%);
 
     // sidebar
-    --sidebar-bg-color: #292E39;
+    --sidebar-bg-color: #292E39;    
     --sidebar-shadow: rgba(23, 28, 40, 0.40);    
+
+    // Category
+    --cate-item-bg: #171C28;
+    --cate-item-thumb-bg: #292E39;
+    --cate-item-title-color: #fff;
+
+    // Button
+    --filter-btn-color: #FFFFFF;
+    --filter-btn-bg: #171C28;
+
+    // Product card
+    --product-card-bg: #171C28;
+    --product-card-shadow: rgba(0, 0, 0, 0.20);
+
+
 }
