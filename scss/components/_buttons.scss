@@ -40,3 +40,47 @@
         margin-top: 6px;
     }
 }
+
+// Buttons
+.btn {
+    height: 46px;
+    background-color: #F8F8FB;
+    padding: 0 20px;
+    border-radius: 6px;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    & + & {
+        margin-left: 20px;
+    }
+
+    &--text {
+        background-color: transparent;
+        font-weight: 400;
+        color: #9E9DA8;
+    }
+
+    &--primary {
+        color: #171C28;
+        background-color: #ffb700;
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: 1px solid #d2d1d6;
+    }
+
+    &--rounded {
+        border-radius: 99px;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &[disabled] {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
