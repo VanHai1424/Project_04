@@ -1,4 +1,4 @@
-@use "../abtracts";
+@use "../abstracts";
 
 .filter-wrap {
     position: relative;
@@ -17,7 +17,7 @@
     transition: opacity, visibility;
     transition-duration: 0.2s;
 
-    @include abtracts.screen(sm) {
+    @include abstracts.screen(sm) {
         width: 100vw;
         height: 100vh;
         position: fixed;
@@ -117,12 +117,12 @@
                 height: 36px;
                 padding: 0 12px;
 
-                @include abtracts.screen(xl) {
+                @include abstracts.screen(xl) {
                     width: 100%;
                 }
             }
 
-            @include abtracts.screen(xl) {
+            @include abstracts.screen(xl) {
                 width: 100%;
             }
         }
@@ -143,8 +143,8 @@
                 color: #9E9DA8;
             }
 
-            @include abtracts.screen(sm) {
-                font-size: 1.6rem;
+            @include abstracts.screen(sm) {
+                font-size: 1.6rem !important;
             }
         }
 
@@ -167,7 +167,7 @@
             line-height: 142.857%;
             cursor: pointer;
 
-            @include abtracts.screen(xl) {
+            @include abstracts.screen(xl) {
                 flex: 1;
             }
         }
@@ -181,7 +181,7 @@
             flex-wrap: wrap;
             gap: 10px 20px;
 
-            @include abtracts.screen(sm) {
+            @include abstracts.screen(sm) {
                 gap: 10px;
             }
         }
@@ -215,7 +215,7 @@
         margin: 0 30px;
         background-color: #eee;
 
-        @include abtracts.screen(xl) {
+        @include abstracts.screen(xl) {
             width: 100%;
             height: 1px;
             margin: 30px 0;
@@ -227,7 +227,7 @@
         justify-content: flex-end;
         margin-top: 32px;
 
-        @include abtracts.screen(sm) {
+        @include abstracts.screen(sm) {
             position: sticky;
             bottom: 30px;  
             background-color: var(--filter-form-bg);
@@ -238,8 +238,8 @@
     &__cancel, &__submit {
         height: 38px;
         padding: 0 10px;
-        
-        @include abtracts.screen(sm) {
+
+        @include abstracts.screen(sm) {
             flex: 1;
             height: 42px;
         }
@@ -262,12 +262,12 @@
         overflow-y: auto;
         overscroll-behavior: contain;
 
-        @include abtracts.screen(xl) {
+        @include abstracts.screen(xl) {
             flex-direction: column;
         }
 
-        @include abtracts.screen(sm) {
-            max-height: calc(100vh - 368px);
+        @include abstracts.screen(sm) {
+            max-height: calc(100vh - 230px);
             padding-bottom: 60px;
         }
     }

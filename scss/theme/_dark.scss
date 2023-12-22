@@ -1,4 +1,4 @@
-@use "../abtracts";
+@use "../abstracts";
 html.dark {
     // header
     --text-color: #FFFFFF;
@@ -8,8 +8,10 @@ html.dark {
     --top-act-group-bg-color: #292E39;
     --top-act-group-shadow: rgba(0, 0, 0, 0.20);
     --top-act-group-separate: #EDEDF6;
+    --footer-bg-color: var(--header-bg-color);
+    --footer-text-color: #9e9da6;
 
-    @include abtracts.screen(sm) {
+    @include abstracts.screen(sm) {
         --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.20);
     }
 

@@ -1,4 +1,4 @@
-@use "../abtracts";
+@use "../abstracts";
 .dropdown {
     position: absolute;
     left: 0;
@@ -6,7 +6,7 @@
     display: none;
     width: min(1240px, 100%);
 
-    @include abtracts.screen(lg) {
+    @include abstracts.screen(lg) {
         position: initial;
         padding: 0;
     }
@@ -28,7 +28,7 @@
             filter: var(--dropdown-arrow-color);
         }
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             padding: 0 40px;
             border-radius: 0;
             background: transparent;
@@ -39,7 +39,7 @@
             }
         }
 
-        @include abtracts.screen(sm) {
+        @include abstracts.screen(sm) {
             padding: 0 20px;
         }
     }
@@ -55,7 +55,7 @@
             border-right: 1px solid var(--menu-top-border-color);
             overflow-y: auto;
 
-            @include abtracts.screen(lg) {
+            @include abstracts.screen(lg) {
                 width: 100%;
                 height: auto;
             }
@@ -68,7 +68,7 @@
     display: flex;
     gap: 14px;
 
-    @include abtracts.screen(lg) {
+    @include abstracts.screen(lg) {
         margin-top: 10px;
     }
 
@@ -82,11 +82,11 @@
         width: 36px;
         height: 36px;
 
-        @include abtracts.screen(xl) {
+        @include abstracts.screen(xl) {
             display: none;
         }
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             display: block;
         }
     }
@@ -121,7 +121,7 @@
     &__list {
         margin-top: 19px;
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             margin-top: 0;
         }
     }
@@ -156,11 +156,11 @@
     padding-left: var(--inner-padding);
     overflow-y: auto;
 
-    @include abtracts.screen(lg) {
+    @include abstracts.screen(lg) {
         padding-left: 0;
     }
 
-    @include abtracts.screen(lg) {
+    @include abstracts.screen(lg) {
         position: initial;
         grid-template-columns: 1fr;
     }
@@ -173,7 +173,7 @@
         grid-template-columns: repeat(4, 1fr);
         padding-left: 0;
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             grid-template-columns: 1fr;
             height: auto;
         }

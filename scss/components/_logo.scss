@@ -1,15 +1,15 @@
-@use "../abtracts";
+@use "../abstracts";
 .logo {
     display: flex;
     align-items: center;
     gap: 14px;
 
-    @include abtracts.screen(lg) {
+    @include abstracts.screen(lg) {
         margin-left: 40px;
         gap: 10px;
     }
 
-    @include abtracts.screen(md) {
+    @include abstracts.screen(md) {
         margin-left: 0;
         gap: 10px;
     }
@@ -19,12 +19,12 @@
         font-weight: 700;
         line-height: 145.455%;
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             font-size: 1.8rem;
         }
     }
 
-    @include abtracts.screen(lg) {
+    @include abstracts.screen(lg) {
         &__img {
             width: 24px;
         }

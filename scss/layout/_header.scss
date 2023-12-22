@@ -1,4 +1,4 @@
-@use "../abtracts";
+@use "../abstracts";
 
 %flexItemsCenter {
     display: flex;
@@ -7,7 +7,7 @@
 
 .header {
     background-color: var(--header-bg-color);
-    @include abtracts.screen(sm) {
+    @include abstracts.screen(sm) {
         box-shadow: 0px 20px 60px 10px var(--header-shadow-color);
     }
 
@@ -19,11 +19,11 @@
     z-index: 1;
     padding: 30px 0;
 
-    @include abtracts.screen(lg) {
+    @include abstracts.screen(lg) {
         padding: 20px 0;
     }
 
-    @include abtracts.screen(md) {
+    @include abstracts.screen(md) {
         justify-content: space-between;
         padding: 16px 0;
     }
@@ -32,11 +32,11 @@
 .navbar {
     margin-left: 129px;
 
-    @include abtracts.screen(xl) {
+    @include abstracts.screen(xl) {
         margin-left: 28px;
     }
 
-    @include abtracts.screen(lg) {
+    @include abstracts.screen(lg) {
         position: fixed;
         inset: 0 50% 0 0;
         background-color: var(--sidebar-bg-color);
@@ -57,7 +57,7 @@
         }
     }
 
-    @include abtracts.screen(sm) {
+    @include abstracts.screen(sm) {
         inset: 0 20% 0 0;
     }
 
@@ -65,7 +65,7 @@
         visibility: hidden;
         opacity: 0;
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             position: fixed;
             inset: 0;
             z-index: 8;
@@ -78,12 +78,12 @@
     &__close-btn {
         display: none;
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             padding: 10px 40px;
             display: block;
         }
 
-        @include abtracts.screen(sm) {
+        @include abstracts.screen(sm) {
             padding: 0px 20px 10px;
         }
     }
@@ -91,7 +91,7 @@
     &__list {
         @extend %flexItemsCenter;
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             flex-direction: column;
             align-items: flex-start;
             overflow-y: auto;
@@ -99,11 +99,11 @@
             height: calc(100% - 40px);
         }
 
-        @include abtracts.screen(md) {
+        @include abstracts.screen(md) {
             height: calc(100% - 140px);
         }
         
-        @include abtracts.screen(sm) {
+        @include abstracts.screen(sm) {
             height: calc(100% - 128px);
         }
     }
@@ -117,14 +117,14 @@
         font-weight: 500;
         line-height: 146.667%;
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             justify-content: space-between;
             padding: 0 40px;
             font-size: 1.6rem;
             line-height: 150%;
         }
 
-        @include abtracts.screen(sm) {
+        @include abstracts.screen(sm) {
             height: 44px;   
             padding: 10px 20px;
         }
@@ -133,7 +133,7 @@
     &__arrow {
         margin-top: 3px;
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             rotate: -90deg;
         }
     }
@@ -148,7 +148,7 @@
             display: block;
         }
 
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             width: 100%;
 
             &:hover .dropdown {
@@ -168,7 +168,7 @@
     gap: 20px;
     margin-left: auto;
 
-    @include abtracts.screen(md) {
+    @include abstracts.screen(md) {
         margin-left: 0;
     }
 
@@ -184,7 +184,7 @@
     }
 
     &__group--single {
-        @include abtracts.screen(lg) {
+        @include abstracts.screen(lg) {
             display: none;
         }
     }
@@ -227,7 +227,7 @@
     padding: 0 40px;
     height: 50px;
 
-    @include abtracts.screen(sm) {
+    @include abstracts.screen(sm) {
         height: 44px;        
         padding: 10px 20px;
     }

@@ -1,9 +1,10 @@
-@use "../abtracts";
+@use "../abstracts";
 .home {
+    margin-bottom: 50px;
     &__container {
         margin-top: 40px;
 
-        @include abtracts.screen(md) {
+        @include abstracts.screen(md) {
             margin-top: 30px;
         }
     }
@@ -18,12 +19,12 @@
     &__cate {
         --grid-gutter-x: 51px;
 
-        @include abtracts.screen(xl) {
+        @include abstracts.screen(xl) {
             --grid-gutter-x: 24px;
 
         }
 
-        @include abtracts.screen(md) {
+        @include abstracts.screen(md) {
             --grid-gutter-y: 20px;
 
         }
