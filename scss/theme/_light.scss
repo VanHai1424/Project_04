@@ -47,4 +47,13 @@ html {
     --filter-form-tag-bg: #F8F8FB;
     --filter-footer-padding-bg: #fff;
 
+    // Auth
+    --auth-content-bg: #fff;
+    --form-checkbox-label: #9E9DA8;
+    --form-placeholder-color: #D2D1D6;
+    @include abstracts.screen(md) {
+        --auth-intro-bg: #fff;
+    }
+
+
 }
