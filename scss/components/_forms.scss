@@ -140,4 +140,78 @@ $error-color: #ed4337;
             top: 4px;
         }
     }
+
+    &__label {
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 145.455%;
+
+        &--small {
+            font-size: 1.4rem;
+            line-height: 142.857%;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__select-wrap {
+        border-radius: 6px;
+        border: 1px solid #D2D1D6;
+    }
+
+    
+
+    &__select {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: calc(100% - 10px);
+        min-width: var(--width, 111px);
+        padding: 0 14px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+        cursor: pointer;
+
+        @include abstracts.screen(xl) {
+            flex: 1;
+        }
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            height: 45px;
+        }
+    }
+
+    &__select + &__select {
+        border-left: 1px solid #D2D1D6;
+    }
+    
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+
+        @include abstracts.screen(sm) {
+            gap: 10px;
+        }
+    }
+
+    &__tag {
+        border-radius: 6px;
+        background: var(--form-tag-bg);
+
+        padding: 6px 12px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+        color: #9E9DA8;
+        transition: color 0.2s;
+
+        &:hover {
+            color: var(--text-color);
+        }
+    }
 }

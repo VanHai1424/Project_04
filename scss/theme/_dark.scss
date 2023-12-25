@@ -42,7 +42,7 @@ html.dark {
     // Filter form 
     --filter-form-bg: var(--dropdown-bg-color);
     --filter-form-shadow: rgba(0, 0, 0, 0.40);
-    --filter-form-tag-bg: #171C28;
+    --form-tag-bg: #171C28;
     --filter-form-arrow: var(--dropdown-arrow-color);
     --filter-footer-padding-bg: var(--filter-form-bg);
 
@@ -54,4 +54,26 @@ html.dark {
     --auth-heading-color: #B9BABE;
     --form-placeholder-color: #B9BABE;
 
+    // Product detail
+    --product-detail-bg: #292E39;
+    --prod-info-bg: #171C28;
+    --product-info-content-bg: transparent;
+    --product-info-tag-bg: #292e39;
+
+    @include abstracts.screen(md) {
+        --product-detail-bg: #292E39;
+        --prod-info-bg: transparent;
+        --product-info-content-bg: #171C28;
+    }
+
+    // Breadcrumbs 
+    --breadcrumbs-bg: #171C28;
+    --breadcrumbs-shadow: rgba(23, 28, 40, 0.20);
+    @include abstracts.screen(md) {
+        --breadcrumbs-bg: #171C28;
+
+    }
+
+    // Search bar 
+    --search-bar-bg: #171C28;
 }

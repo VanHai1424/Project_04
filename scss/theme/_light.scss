@@ -44,7 +44,7 @@ html {
     // Filter form 
     --filter-form-bg: #fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.40);
-    --filter-form-tag-bg: #F8F8FB;
+    --form-tag-bg: #F8F8FB;
     --filter-footer-padding-bg: #fff;
 
     // Auth
@@ -55,5 +55,28 @@ html {
         --auth-intro-bg: #fff;
     }
 
+    // Product detail
+    --product-detail-bg: #fff;
+    --prod-info-bg: #F6F6F6;
 
+    @include abstracts.screen(md) {
+        --product-detail-bg: #fafafd;
+        --prod-info-bg: #fff;
+    }
+
+    // Breadcrumbs 
+    --breadcrumbs-bg: #F6F6F6;
+    --breadcrumbs-shadow: rgba(237, 237, 246, 0.20);
+    --product-info-content-bg: #fff;
+    --product-info-tag-bg: #ededf6;
+    @include abstracts.screen(md) {
+        --breadcrumbs-bg: #fff;
+
+    }
+
+    // Search bar 
+    --search-bar-bg: #fff;
+
+    // Review card
+    --review-card-bg: #FAFAFD;
 }
