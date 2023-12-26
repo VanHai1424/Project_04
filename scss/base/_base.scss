@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -32,7 +36,6 @@ a, img, button, input, textarea, select, label {
     padding: 0;
     font-family: inherit;
     color: inherit;
-    -webkit-tap-highlight-color: transparent;
     outline: none;
     border: none;
 }
@@ -50,4 +53,12 @@ input, textarea {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
+}
+
+i, em {
+    font-style: italic;
+}
+
+b, strong {
+    font-weight: 600;
 }
