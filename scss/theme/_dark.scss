@@ -10,6 +10,9 @@ html.dark {
     --top-act-group-separate: #EDEDF6;
     --footer-bg-color: var(--header-bg-color);
     --footer-text-color: #9e9da6;
+    --header-act-dropdown-bg: #2f3441;
+    --header-act-dropdown-shadow: rgba(23, 28, 40, 0.40);
+    --header-act-dropdown-border-color: #171c28;
 
     @include abstracts.screen(sm) {
         --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.20);
