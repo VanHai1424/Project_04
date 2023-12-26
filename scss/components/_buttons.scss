@@ -54,6 +54,12 @@
 
     font-size: 1.8rem;
     font-weight: 500;
+    white-space: nowrap;
+
+    &--small {
+        height: 40px;
+        padding: 0 16px;
+    }
 
     & + & {
         &:not(.btn--no-margin) {
@@ -64,7 +70,6 @@
     &--text {
         background-color: transparent;
         font-weight: 400;
-        color: #9E9DA8;
     }
 
     &--primary {
