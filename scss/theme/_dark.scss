@@ -48,6 +48,12 @@ html.dark {
     --form-tag-bg: #171C28;
     --filter-form-arrow: var(--dropdown-arrow-color);
     --filter-footer-padding-bg: var(--filter-form-bg);
+    
+    // Forms
+    --form-placeholder-color: #B9BABE;
+    --form-select-dialog-shadow: rgba($color: #fff, $alpha: 0.15);
+    --form-select-dialog-bg: #2f3441;
+    --form-option-hover-bg: #292e39;
 
     // Auth
     --auth-content-bg: #292E39;
@@ -55,7 +61,6 @@ html.dark {
     --auth-intro-bg: #171C28;
     --auth-intro-text-color: #B9BABE;
     --auth-heading-color: #B9BABE;
-    --form-placeholder-color: #B9BABE;
 
     // Product detail
     --product-detail-bg: #292E39;

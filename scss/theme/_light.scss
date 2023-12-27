@@ -51,11 +51,16 @@ html {
     --filter-form-shadow: rgba(200, 200, 200, 0.40);
     --form-tag-bg: #F8F8FB;
     --filter-footer-padding-bg: #fff;
+    
+    // Forms
+    --form-placeholder-color: #D2D1D6;
+    --form-select-dialog-shadow: rgba($color: #000000, $alpha: 0.15);
+    --form-select-dialog-bg: #fff;
+    --form-option-hover-bg: #ebebeb;
 
     // Auth
     --auth-content-bg: #fff;
     --form-checkbox-label: #9E9DA8;
-    --form-placeholder-color: #D2D1D6;
     @include abstracts.screen(md) {
         --auth-intro-bg: #fff;
     }

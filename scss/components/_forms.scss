@@ -5,6 +5,24 @@ $error-color: #ed4337;
         opacity: 0.5;
         pointer-events: none;
     }
+
+    &__row {
+        display: flex;
+        gap: 30px;
+
+        @include abstracts.screen(md) {
+            gap: 20px;
+        }
+
+        @include abstracts.screen(sm) {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        > * {
+            flex: 1;
+        }
+    }
     
     &__group {
         margin-top: 30px;
@@ -35,10 +53,9 @@ $error-color: #ed4337;
         }
     }
 
-    &__text-input {
+    &__text-area, &__text-input {
         display: flex;
         align-items: center;
-        height: 50px;
         border-radius: 10px;
         border: 1.5px solid #d2d1d6;
         padding: 0 12px;
@@ -47,8 +64,128 @@ $error-color: #ed4337;
             border-color: #77DAE6;
         }
 
+    }
+
+    &__text-area {
+        height: 100px;
+        padding: 12px;
+
+        &-input {
+            resize: none;
+        }
+    }
+
+    &__text-input {
+        position: relative;
+        height: 50px;
+
+        &--small {
+            height: 42px;
+        }
+
         @include abstracts.screen(md) {
             height: 48px;
+        }
+    }
+
+    &__select-dialog {
+        position: absolute;
+        bottom: 44px;
+        left: 10px;
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        translate: 0 8px;
+        transition: opacity, visibility, translate;
+        transition-duration: 0.2s;
+
+        min-width: 230px;
+        background: var(--form-select-dialog-bg);
+        padding-bottom: 10px;
+        border: 1px solid #d2d1d6;
+        border-radius: 10px;
+        max-height: 310px;
+        box-shadow: 0 0 5px var(--form-select-dialog-shadow);
+        
+        &.show {
+            opacity: 1;
+            visibility: visible;
+            translate: 0;
+        }
+
+        @include abstracts.screen(sm) {        
+            position: fixed;
+            inset: 0;
+            max-width: initial;
+            max-height: initial;
+            border-radius: 0;
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        border-bottom: 1px solid #d2d1d6;
+        padding: 0 20px;
+        height: 38px;
+
+        &-input {
+            height: 100%;
+            flex: 1;
+            font-size: 1.6rem;
+        }
+
+        &-icon {
+            margin-left: 10px;
+            width: 16px;
+        }
+
+        @include abstracts.screen(lg) {        
+            height: 42px;
+        }
+
+        @include abstracts.screen(sm) {    
+            flex-direction: row-reverse;    
+            margin-top: 30px;
+
+            &-icon {
+                margin-left: 0;
+            }
+
+            &-input {
+                padding-left: 8px;
+            }
+        }
+    }
+
+    &__options-list {
+        margin-top: 10px;
+        flex: 1;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    &__option {
+        padding: 8px 20px;
+        font-size: 1.4rem;
+
+        @include abstracts.screen(lg) {        
+            padding: 14px 20px;
+
+        }
+
+        &--current {
+            font-weight: 500;
+            background-color: rgb(255, 183, 0, 0.6);
+        }
+
+        &:not(&--current):hover {
+            background: var(--form-option-hover-bg);
+            cursor: pointer;
         }
     }
 
@@ -66,9 +203,11 @@ $error-color: #ed4337;
         animation: shake 0.5s;
     }
 
-    &__input {
+    &__input, &__text-area-input {
         flex: 1;
         height: 100%;
+        width: 100%;
+        
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 144.444%;
@@ -77,12 +216,15 @@ $error-color: #ed4337;
             color: var(--form-placeholder-color);
         }
 
-        &-icon {
-            margin-left: 12px;
-        }
 
         @include abstracts.screen(md) {
             font-size: 1.5rem;
+        }
+    }
+
+    &__input {
+        &-icon {
+            margin-left: 12px;
         }
     }
 
@@ -213,5 +355,14 @@ $error-color: #ed4337;
         &:hover {
             color: var(--text-color);
         }
+    }
+
+    &__close-dialog {
+        font-size: 3rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 2px 18px;
+        opacity: 0.8;
     }
 }
