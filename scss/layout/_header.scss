@@ -6,6 +6,8 @@
 }
 
 .header {
+    position: relative;
+    z-index: 1;
     background-color: var(--header-bg-color);
     @include abstracts.screen(sm) {
         box-shadow: 0px 20px 60px 10px var(--header-shadow-color);
@@ -335,8 +337,8 @@
     &__bottom {
         margin: 20px 0;    
         padding: 20px 0;
-        border-top: 1.5px solid var(--header-act-dropdown-border-color);
-        border-bottom: 1.5px solid var(--header-act-dropdown-border-color);
+        border-top: 1px solid var(--header-act-dropdown-border-color);
+        border-bottom: 1px solid var(--header-act-dropdown-border-color);
     }
 
     &__separate {
