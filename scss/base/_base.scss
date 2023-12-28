@@ -81,3 +81,8 @@ i, em {
 b, strong {
     font-weight: 600;
 }
+
+.separate {
+    margin: var(--margin) 0;
+    border: 1px solid var(--separate-color);
+}
