@@ -19,7 +19,7 @@
     @extend %flexItemsCenter;
     position: relative;
     z-index: 1;
-    padding: 30px 0;
+    padding: 20px 0;
 
     @include abstracts.screen(lg) {
         padding: 20px 0;
@@ -262,6 +262,23 @@
         border-radius: 8px;
         cursor: pointer;
     }
+    
+    &__user {
+        position: relative;
+
+        &:hover .act-dropdown {
+            display: block;
+        }
+    }
+
+    &__dropdown {
+        right: -15px !important;
+        width: min(300px, 100vw) !important;
+    }
+
+    &__dropdown-arrow {
+        right: 18px !important;
+    }
 }
 
 .nav-btn {
@@ -414,4 +431,44 @@
         line-height: 146.667%;
     }
 
+}
+
+.user-menu {
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__name {
+        margin-bottom: 8px;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    
+    &__list {
+        margin-top: 30px;
+
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    &__separate {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid var(--separate-color);
+    }
 }
