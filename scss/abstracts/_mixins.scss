@@ -6,8 +6,8 @@ $grid-breakpoints: (
     xxl: 1400px,
 );
 
-$breakPoint: map-get($map: $grid-breakpoints, $key: $key);
-@debug $breakPoint;
+// $breakPoint: map-get($map: $grid-breakpoints, $key: $key);
+// @debug $breakPoint;
 
 @mixin screen($key) {
     $breakPoint: map-get($map: $grid-breakpoints, $key: $key);
